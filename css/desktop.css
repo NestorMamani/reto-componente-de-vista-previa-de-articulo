@@ -1,0 +1,37 @@
+section{
+    display: flex;
+    width: 55%;
+}
+
+.product{
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+
+.big_text{
+    margin-top: 4rem;
+}
+
+.share{
+    width: 20rem;
+    position: relative;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    top: 10rem;
+    right: -3rem;
+}
+
+.triangle{
+    content: "";
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #49556b;
+    position: absolute;
+    right: 6rem;
+    top: 4.1rem;
+}
+
+.attribution{
+    font-size: 1.5rem;
+}

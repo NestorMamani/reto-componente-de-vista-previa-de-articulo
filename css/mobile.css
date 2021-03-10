@@ -18,17 +18,20 @@ body{
     height: 100vh;
     background: linear-gradient(180deg, rgba(237,242,248,1) 20%, rgba(229,237,244,1) 100%) no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 section{
     width: 90%;
+}
+
+section div{
     display: flex;
-    flex-direction: column;
+    position: relative;
     align-items: center;
+    flex-direction: column;
     background-color: white;
-    border-radius: 1.5rem;
 }
 
 .product{
@@ -60,6 +63,7 @@ section{
     background-color: white;
     position: relative;
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -70,6 +74,7 @@ section{
 
 .user__data{
     margin-left: 1.5rem;
+    display: flex;
 }
 
 .user__name{
@@ -82,6 +87,7 @@ section{
     font-size: 1rem;
     color: hsl(214, 17%, 51%);
     font-weight: 500;
+    justify-self: left;
 }
 
 .button{
@@ -93,10 +99,6 @@ section{
     border-radius: 1.5rem;
     position: absolute;
     right: 0px;
-}
-
-.active{
-    display: none;
 }
 
 .share{
@@ -112,7 +114,9 @@ section{
 .subshare{
     width: 80%;
     display: flex;
+    flex-direction: row;
     position: relative;
+    background-color: #49556b;
 }
 
 .share_text{
@@ -139,4 +143,14 @@ section{
 .share__icon{
     z-index: 1;
     color: white;
+}
+
+.triangle{
+    display: none;
+}
+
+.attribution{
+    position: absolute;
+    font-size: 1rem;
+    bottom: 2rem;
 }
